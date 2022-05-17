@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Oswald:wght@300;400;500&display=swap');
+
+/* font-family: 'Libre Baskerville', serif;
+font-family: 'Oswald', sans-serif; */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Libre Baskerville', serif;
+}
+
+h1{
+  text-align: center;
+  padding: 30px;
+  font-size: 55px;
+}
+
+
+/* links */
+.link-projeto, .link-sobre,.link-contato{
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+/* parallax */
+
+.wrapper{
+  width: 100%;
+  margin: 0 auto;
+}
+
+main{
+  display: block;
+  background-color: #FFF;
+}
+
+section.module.parallax{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh !important;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+section.module.parallax:after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+  background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+}
+
+
+section.module.parallax-1{
+  background-image: url("../img/avenida-paulista.jpg");
+}
+
+section.module.parallax-2{
+  background-image: url("../img/street-sp.jpg");
+  
+}
+
+section.module.parallax-3{
+  background-image: url("../img/metro.jpg");
+}
+
+
+/* grid de imagens */
+.container-image{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 440px;
+  grid-column-gap: 10px;
+  padding-left: 4rem;
+}
+
+.image{
+  width: 43rem;
+  height: 400px;
+  max-width: 800px;
+}
+
+
+.image:hover{
+  color: rgba(0, 0, 0, 1);
+  transition: 0.3s;
+  opacity: 0.6;
+}
+
+.h1-sobre{
+  margin-top: 5rem;
+}
+
+.info{
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 8rem;
+  line-height: 2;
+}
+
+input{
+  width: 28rem;
+  padding: 22px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+.inputs{
+  padding-left: 55rem;
+}
+
+.mensagem{
+  padding-bottom: 20rem;
+}
+
+.botao{
+  width: 31rem;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+
+.rodape{
+  background-color: #C35530;
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+}
